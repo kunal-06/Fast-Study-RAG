@@ -1,0 +1,9 @@
+pinecone
+dotenv
+langchain
+langchain_community
+langchain_core
+langchain_text_splitters
+langchain_google_genai
+google-genai
+streamlit
