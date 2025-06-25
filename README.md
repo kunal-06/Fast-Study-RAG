@@ -95,18 +95,21 @@ Fast Study uses a **Retrieval-Augmented Generation** approach.
 
 > 📌 Diagram below explains the full flow:
 
-![RAG Pipeline]
+![RAG Pipeline](https://github.com/user-attachments/assets/5e2b542c-f1f2-4b84-b970-087a395ae09f)
+
 
 
 ### Steps:
 1. **PDF Upload**: User uploads study material in PDF format.
 2. **Text Extraction**: PDF text is extracted and chunked into sections.
-3. **Vectorization**: Each chunk is transformed into a numerical embedding.
-4. **Storage**: Embeddings are stored in Pinecone for fast retrieval.
-5. **User Query**: User types a question.
-6. **Retriever**: Finds the top-matching chunks by comparing vector similarity.
-7. **LLM Input**: Query + matched chunks are sent to an LLM (e.g., GPT).
-8. **Answer**: The LLM provides a natural language response to the user.
+3. **Chunking**: Divide Text Into Small Chunks.
+4. **Vectorization**: Each chunk is transformed into a numerical embedding.
+5. **Storage**: Embeddings are stored in Pinecone for fast retrieval.
+6. **User Query**: User types a question.
+7. **Query Embedding**: Transform Query into a numerical embedding.
+8. **Retriever**: Finds the top-matching chunks by comparing vector similarity.
+9. **LLM Input**: Query + matched chunks are sent to an LLM (e.g., GPT).
+10. **Answer**: The LLM provides a natural language response to the user.
 
 ---
 
